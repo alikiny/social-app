@@ -2,9 +2,9 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
-    entry: ["babel-polyfill", "./src/index.js"],
+    entry: ['babel-polyfill', './src/index.js'],
     output: {
-        path: path.join(__dirname, "public", "dist"),
+        path: path.join(__dirname, 'public', 'dist'),
         filename: "bundle.js"
     },
     module: {
@@ -36,6 +36,6 @@ module.exports = {
         contentBase: path.join(__dirname, 'public'),
         compress: true, // enable gzip compression
         historyApiFallback: true, // true for index.html upon 404, object for multiple paths
-        publicPath: '/dist/',
+        publicPath: "/dist/",
     },
 }
